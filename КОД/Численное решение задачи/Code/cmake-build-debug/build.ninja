@@ -61,6 +61,12 @@ build CMakeFiles/Code.dir/LTE.cpp.obj: CXX_COMPILER__Code_unscanned_Debug C$:/Us
   OBJECT_DIR = CMakeFiles\Code.dir
   OBJECT_FILE_DIR = CMakeFiles\Code.dir
 
+build CMakeFiles/Code.dir/Libs/algebra.cpp.obj: CXX_COMPILER__Code_unscanned_Debug C$:/Users/gerce/Documents/WORK$ DIRECTORY/Курсовая$ работа$ 6$ сем/КОД/Численное$ решение$ задачи/Code/Libs/algebra.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles\Code.dir\Libs\algebra.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Code.dir
+  OBJECT_FILE_DIR = CMakeFiles\Code.dir\Libs
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Code
@@ -69,7 +75,7 @@ build CMakeFiles/Code.dir/LTE.cpp.obj: CXX_COMPILER__Code_unscanned_Debug C$:/Us
 #############################################
 # Link the executable Code.exe
 
-build Code.exe: CXX_EXECUTABLE_LINKER__Code_Debug CMakeFiles/Code.dir/main.cpp.obj CMakeFiles/Code.dir/LTE.cpp.obj
+build Code.exe: CXX_EXECUTABLE_LINKER__Code_Debug CMakeFiles/Code.dir/main.cpp.obj CMakeFiles/Code.dir/LTE.cpp.obj CMakeFiles/Code.dir/Libs/algebra.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Code.dir

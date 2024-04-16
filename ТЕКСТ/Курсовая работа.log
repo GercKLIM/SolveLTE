@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  16 APR 2024 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  5 MAY 2024 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,15 +899,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 178.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hss' on input line 179.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 182.
+(hyperref)                removing `\hss' on input line 180.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -923,7 +919,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 188.
+(hyperref)                removing `\hss' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 189.
 
 [5] [6
 
@@ -960,7 +960,7 @@ texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist
 e1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
 cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
 frm1440.pfb>
-Output written on "Курсовая работа.pdf" (6 pages, 388020 bytes).
+Output written on "Курсовая работа.pdf" (6 pages, 388282 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  185 compressed objects within 2 object streams

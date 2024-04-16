@@ -11,6 +11,9 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(Code main.cpp
         LTE.h
         LTE.cpp
+        Libs
+        Libs/algebra.cpp
+        Libs/algebra.h
         Output/test1/test1_LD2e.txt
         Output/test1/test1_LD2i.txt
         Output/test1/test1_LD3e.txt

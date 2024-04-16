@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include "./Libs/algebra.h"
 
 /* Класс Линейных Уравнений Переноса */
 class LTE {
@@ -16,10 +17,12 @@ public:
     /* Параметры класса */
 
     double a = 1;       // Параметр a
+    double t0 = 0.0;    // Начальное время
     double T = 1;       // Конец временного учатска
     double h = 0.1;     // Шаг по пространству
     double tau = 0.1;   // Шаг по времени
     double l1 = -10, l2 = 10; // Область
+    double gamma;
 
     // Функция задания U0
     void set_U0(std::function<double(double)> func) {
@@ -38,9 +41,9 @@ public:
         std::cout << "l = (" << l1 << ", " << l2 << ")" << std::endl;
         std::cout << "h = " << h << std::endl;
         std::cout << "tau = " << tau << std::endl;
+        std::cout << "gamma = " << /*a * tau / h*/ gamma << std::endl;
         std::cout << "U0 is " << ((U0_is_set) ? "set" : "NOT set") << std::endl;
     }
-
 
     /* Заголовки методов численного решения */
 
