@@ -1,0 +1,3 @@
+C:/Users/gerce/Documents/WORK DIRECTORY/Курсовая работа 6 сем/КОД/Численное решение задачи/Code/cmake-build-debug/CMakeFiles/Code.dir
+C:/Users/gerce/Documents/WORK DIRECTORY/Курсовая работа 6 сем/КОД/Численное решение задачи/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gerce/Documents/WORK DIRECTORY/Курсовая работа 6 сем/КОД/Численное решение задачи/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
