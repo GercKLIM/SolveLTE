@@ -21,7 +21,7 @@ public:
     double T = 1;       // Конец временного учатска
     double h = 0.1;     // Шаг по пространству
     double tau = 0.1;   // Шаг по времени
-    double l1 = -10, l2 = 10; // Область
+    double l1 = -1, l2 = 1; // Область
     double gamma;
 
     // Функция задания U0
@@ -50,6 +50,7 @@ public:
     // Явная схема с левой разностью на 2 точках
     bool SolveLD2e(std::string filename);
 
+    std::vector<double> SolveTriDiagonal(const std::vector<std::vector<double>>& A, const std::vector<double>& B);
     // Невная схема с левой разностью на 2 точках
     bool SolveLD2i(std::string filename);
 
