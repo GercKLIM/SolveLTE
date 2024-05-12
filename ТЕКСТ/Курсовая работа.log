@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  5 MAY 2024 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  12 MAY 2024 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,59 +873,75 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 96.
+(hyperref)                removing `\hss' on input line 97.
 
 [3]
+<./figures/primer1_1.png, id=79, 746.79pt x 486.31688pt>
+File: ./figures/primer1_1.png Graphic file (type png)
+<use ./figures/primer1_1.png>
+Package pdftex.def Info: ./figures/primer1_1.png  used on input line 102.
+(pdftex.def)             Requested size: 227.62204pt x 148.22624pt.
+<./figures/primer1_2.png, id=80, 764.8575pt x 497.60907pt>
+File: ./figures/primer1_2.png Graphic file (type png)
+<use ./figures/primer1_2.png>
+Package pdftex.def Info: ./figures/primer1_2.png  used on input line 108.
+(pdftex.def)             Requested size: 227.62204pt x 148.08418pt.
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 101--112
+[][]  [] 
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 100.
+(hyperref)                removing `\hss' on input line 114.
 
 
-Overfull \hbox (25.24158pt too wide) detected at line 129
+Overfull \hbox (25.24158pt too wide) detected at line 143
 [] \OT1/cmr/m/n/12 = [] = []   =[]\OMS/cmsy/m/n/12 )   []   \OT1/cmr/m/n/12 =[]
 \OMS/cmsy/m/n/12 )   []   \OT1/cmr/m/n/12 =[]\OMS/cmsy/m/n/12 )   \OML/cmm/m/it
 /12 u \OT1/cmr/m/n/12 = \OML/cmm/m/it/12  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \
 OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 at\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
  []
 
+[4 <./figures/primer1_1.png (PNG copy)> <./figures/primer1_2.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 141.
-
-[4]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 179.
+(hyperref)                removing `\hss' on input line 156.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 180.
+(hyperref)                removing `\hss' on input line 158.
+
+[5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 183.
+(hyperref)                removing `\hss' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 184.
+(hyperref)                removing `\hss' on input line 206.
+
+[6]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 218.
+ (./code/Model.py) [7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 221.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 185.
+(hyperref)                removing `\hss' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 186.
+(hyperref)                removing `\hss' on input line 227.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 189.
-
-[5] [6
+[8] [9
 
 ] (./Курсовая работа.aux)
  ***********
@@ -939,13 +955,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 15923 strings out of 474267
- 245414 string characters out of 5751465
- 1934558 words of memory out of 5000000
- 37811 multiletter control sequences out of 15000+600000
+ 16155 strings out of 474267
+ 248399 string characters out of 5751465
+ 1959558 words of memory out of 5000000
+ 38016 multiletter control sequences out of 15000+600000
  577973 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,9n,93p,1095b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,9n,93p,1794b,1398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dis
@@ -956,14 +972,15 @@ cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1728.p
 fb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
-frm1440.pfb>
-Output written on "Курсовая работа.pdf" (6 pages, 388282 bytes).
+/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
+frm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pf
+b>
+Output written on "Курсовая работа.pdf" (9 pages, 456721 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
