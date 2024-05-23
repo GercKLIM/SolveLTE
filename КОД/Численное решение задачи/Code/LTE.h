@@ -57,6 +57,7 @@ public:
     // Явная схема с левой разностью на 3 точках
     bool SolveLD3e(std::string filename);
 
+    std::vector<double> TridiagonalSolver(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c, const std::vector<double>& d);
     // Неявная схема с левой разностью на 3 точках
     bool SolveLD3i(std::string filename);
 
