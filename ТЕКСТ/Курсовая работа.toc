@@ -3,15 +3,14 @@
 \contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {1.\ }}}}{{\textbf {\ignorespaces {Постановка задачи}}}}}{3}{section*.3}%
 \contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{1.1.\ }}}{\ignorespaces {Формулировка}}}{3}{section*.4}%
 \contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{1.2.\ }}}{\ignorespaces {Пример}}}{3}{section*.5}%
-\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {2.\ }}}}{{\textbf {\ignorespaces {Задача Коши для линейного одномерного уравнения переноса}}}}}{4}{section*.6}%
-\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {3.\ }}}}{{\textbf {\ignorespaces {Численные методы решения задачи}}}}}{4}{section*.7}%
-\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{3.1.\ }}}{\ignorespaces {Описание методов}}}{4}{section*.8}%
-\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{3.2.\ }}}{\ignorespaces {Реализация}}}{5}{section*.9}%
-\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{3.3.\ }}}{\ignorespaces {Тестирование}}}{5}{section*.10}%
-\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {4.\ }}}}{{\textbf {\ignorespaces {Метод улучшения решения с помощью нейронной сети}}}}}{5}{section*.11}%
-\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{4.1.\ }}}{\ignorespaces {Модель сверточной нейронной сети}}}{5}{section*.12}%
-\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{4.2.\ }}}{\ignorespaces {Распознавание решения}}}{5}{section*.13}%
-\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{4.3.\ }}}{\ignorespaces {Результаты работы программы}}}{5}{section*.14}%
-\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {5.\ }}}}{{\textbf {\ignorespaces {Актуальность и перспективы задачи}}}}}{5}{section*.15}%
-\contentsline {section}{\textbf {\ignorespaces {Заключение}}}{5}{section*.16}%
-\contentsline {section}{\textbf {\ignorespaces {Список использованных источников}}}{6}{section*.18}%
+\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {2.\ }}}}{{\textbf {\ignorespaces {Задача Коши для линейного одномерного уравнения переноса}}}}}{4}{section*.7}%
+\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {3.\ }}}}{{\textbf {\ignorespaces {Численные методы решения задачи}}}}}{5}{section*.8}%
+\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{3.1.\ }}}{\ignorespaces {Описание методов}}}{5}{section*.9}%
+\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{3.2.\ }}}{\ignorespaces {Реализация}}}{6}{section*.10}%
+\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {4.\ }}}}{{\textbf {\ignorespaces {Метод улучшения решения с помощью нейронной сети}}}}}{6}{section*.11}%
+\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{4.1.\ }}}{\ignorespaces {Модель сверточной нейронной сети}}}{6}{section*.12}%
+\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{4.2.\ }}}{\ignorespaces {Распознавание решения}}}{8}{section*.13}%
+\contentsline {subsection}{\numberline {\hbox to 0pt{\hss }{{4.3.\ }}}{\ignorespaces {Результаты работы программы}}}{8}{section*.14}%
+\contentsline {section}{\numberline {\hbox to 0pt{\hss }{{\textbf {5.\ }}}}{{\textbf {\ignorespaces {Актуальность и перспективы задачи}}}}}{8}{section*.15}%
+\contentsline {section}{\textbf {\ignorespaces {Заключение}}}{8}{section*.16}%
+\contentsline {section}{\textbf {\ignorespaces {Список использованных источников}}}{9}{section*.18}%
