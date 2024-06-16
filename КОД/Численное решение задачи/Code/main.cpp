@@ -28,6 +28,9 @@ void test1(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
     // Явная схема с левой разностью 1-го пор.
     test1.SolveLD2e("./Output/test1/test1_LD2e.txt");
 
+    // Неявная схема с левой разностью 1-го пор.
+    test1.SolveLD2i("./Output/test1/test1_LD2i.txt");
+
     // Схема Лакса
     test1.SolveLax("./Output/test1/test1_Lax.txt");
 
@@ -36,9 +39,6 @@ void test1(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
 
     // Явная схема с левой разностью 2-го пор.
     test1.SolveLD3e("./Output/test1/test1_LD3e.txt");
-
-    // Неявная схема с левой разностью 1-го пор.
-    test1.SolveLD2i("./Output/test1/test1_LD2i.txt");
 
     // Неявная схема с левой разностью 2-го пор.
     test1.SolveLD3i("./Output/test1/test1_LD3i.txt");
@@ -115,7 +115,7 @@ void test4(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
 
     test4.h = h;
     test4.tau = tau;
-    test4.set_U0([&](double x) { return (0.5 * (1 - cos( ((2 * M_PI * ( x - l11)) / (l22 - l11)))));});
+    test4.set_U0([&](double x) { return (1./3. * (1 - cos( ((2 * M_PI * ( x - l11)) / (l22 - l11)))));});
     test4.gamma = test4.a * test4.tau / test4.h;
     //test3.info();
 
@@ -134,7 +134,7 @@ void test4(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
 
 
 /* Тест 5: Зуб */
-void test5(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., double T = 10., double l1 = -1, double l2 = 1, double l22 = -0.5, double l11 = 0.5) {
+void test5(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., double T = 10., double l1 = -1, double l2 = 1, double l11 = -0.5, double l22 = 0.5) {
     LTE test5;
     test5.a = 1;
     test5.T = T;
@@ -214,13 +214,108 @@ void test5(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
 
 
 
+void make_test_dataset(double h, double tau){
 
+    double L1 = -10., L2 = 10.;
+    double T = 1.;
+
+    // Тест 1
+    LTE test1;
+    test1.a = 1;
+    test1.T = T;
+
+    test1.l1 = L1;
+    test1.l2 = L2;
+
+    test1.h = h;
+    test1.tau = tau;
+
+    test1.set_U0([&](double x) { return (x + 1) / 2;});
+    //test1.set_U0([&](double x) { return (x - l1) / (l2 - l1);});
+    test1.gamma = test1.a * test1.tau / test1.h;
+
+    // Тест 2
+    LTE test2;
+    test2.a = 1;
+    test2.T = T;
+
+    test2.l1 = L1;
+    test2.l2 = L2;
+
+    test2.h = h;
+    test2.tau = tau;
+
+
+    test2.set_U0([&](double x) { return ((1. - x) / (1. + 1.)) ;});
+    test2.gamma = test2.a * test2.tau / test2.h;
+
+    // Тест 3
+    LTE test3;
+    test3.a = 1;
+    test3.T = T;
+
+    test3.l1 = L1;
+    test3.l2 = L2;
+    test3.h = h;
+    test3.tau = tau;
+
+    test3.set_U0([&](double x) { return 2./3. ;});
+    test3.gamma = test3.a * test3.tau / test3.h;
+
+    // Тест 4
+    LTE test4;
+    test4.a = 1;
+    test4.T = T;
+
+    test4.l1 = L1;
+    test4.l2 = L2;
+
+    test4.h = h;
+    test4.tau = tau;
+
+    test4.set_U0([&](double x) { return (1./3. * (1 - cos( ((2 * M_PI * ( x + 1.)) / (1. + 1.)))));});
+    test4.gamma = test4.a * test4.tau / test4.h;
+
+
+
+
+    LTE test5;
+    test5.a = 1;
+    test5.T = T;
+
+    test5.l1 = L1;
+    test5.l2 = L2;
+
+    test5.h = h;
+    test5.tau = tau;;
+
+    test5.set_U0([&](double x) {
+        if ((x >= -0.2) and (x < -0.1)) {
+            return (-2./ 3. * (-0.1 + 0.2) * (x + 0.2) + 1.);
+        } else if ((x >= -0.1) and (x <= 0.1)) {
+            return 1./3.;
+        } else if ((x > 0.1) and (x <= 0.2)) {
+            return (2./3. * (0.2 - 0.1) * (x - 0.2) + 1.);
+        } else {
+            return 0.;
+        }
+    });
+    test5.gamma = test5.a * test5.tau / test5.h;
+
+
+    test1.SolveLD2e("./Output/datasets/test1_" + std::to_string(tau) + "_" + std::to_string(h) + ".txt");
+    test2.SolveLD2e("./Output/datasets/test2_" + std::to_string(tau) + "_" + std::to_string(h) + ".txt");
+    test3.SolveLD2e("./Output/datasets/test3_" + std::to_string(tau) + "_" + std::to_string(h) + ".txt");
+    test4.SolveLD2e("./Output/datasets/test4_" + std::to_string(tau) + "_" + std::to_string(h) + ".txt");
+    test5.SolveLD2e("./Output/datasets/test5_" + std::to_string(tau) + "_" + std::to_string(h) + ".txt");
+
+}
 
 
 int main() {
 
     /* Тест 1. Левый треугольник */
-    //test1(0.1, 0.1, -5., 5., 2., -1., 1.);
+    //test1(0.1, 0.2, -10., 10., 2, -1., 1.);
 
     /* Тест 2. Правый треугольник */
     //test2(0.1, 0.1, -10., 10., 10., -1., 1.);
@@ -229,10 +324,15 @@ int main() {
     //test3(0.1, 0.1, -10., 10., 10., 1.);
 
     /* Тест 4. Косинус */
-    //test4(0.1, 0.1, -10., 10., 10., -3., 3.);
+    test4(0.1, 0.1, -20., 20., 10., -1., 1.);
 
     /* Тест 5. Зуб */
     //test5(0.1, 0.1, -10., 10., 10., -3., 3., -1., 1.);
+
+    //make_test_dataset(0.1, 0.1);
+    //make_test_dataset(0.1, 0.05);
+    //make_test_dataset(0.05, 0.05);
+    //make_test_dataset(0.01, 0.01);
 
     std::cout << "Complete!!!" << std::endl;
     return 0;

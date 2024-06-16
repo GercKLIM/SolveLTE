@@ -1,0 +1,852 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     34902,        844]
+NotebookOptionsPosition[     33032,        806]
+NotebookOutlinePosition[     33436,        822]
+CellTagsIndexPosition[     33393,        819]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", " ", 
+    "\"\<\\\\\:0420\:0435\:0437\:0443\:043b\:044c\:0442\:0430\:0442\:044b \
+\:0440\:0430\:0431\:043e\:0442\:044b \:0447\:0438\:0441\:043b\:0435\:043d\
+\:043d\:044b\:0445 \:0430\:043b\:0433\:043e\:0440\:0438\:0442\:043c\:043e\
+\:0432\>\""}], " ", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.925460406031725*^9, 3.925460407000501*^9}, {
+  3.925460440032612*^9, 3.925460445412487*^9}, {3.926840707353002*^9, 
+  3.926840723866995*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6c9b0eec-7378-1748-ad8f-b2ec7cd3566b"],
+
+Cell[CellGroupData[{
+
+Cell["\:041f\:0440\:043e\:0433\:0440\:0430\:043c\:043c\:0430 \:0441\:043e\
+\:0437\:0434\:0430\:043d\:0438\:044f \:0442\:0435\:0441\:0442\:043e\:0432\
+\:044b\:0445 \:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432", "Title",
+ CellChangeTimes->{{3.9254604527095604`*^9, 3.925460487878086*^9}, {
+  3.9268406177063293`*^9, 
+  3.9268406236007805`*^9}},ExpressionUUID->"1da77f5a-6cea-184e-a461-\
+6da34bcd4800"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+\:0421\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\
+\:043e\:0432\:044b\:0445 \:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432
+(\:043d\:0430 \:043e\:0441\:043d\:043e\:0432\:0435 \:0447\:0438\:0441\:043b\
+\:0435\:043d\:043d\:044b\:0445 \:0440\:0435\:0448\:0435\:043d\:0438\:0439 \
+\:043f\:0440\:043e\:0433\:0440\:0430\:043c\:043c\:044b \:043d\:0430 \:0421++)\
+\>", "Section",
+ CellChangeTimes->{
+  3.925460494255642*^9, {3.925460548011936*^9, 3.925460588728379*^9}, {
+   3.926840625798012*^9, 
+   3.926840641227968*^9}},ExpressionUUID->"c90e18fb-27fc-af43-bfa3-\
+ad75534f0433"],
+
+Cell[CellGroupData[{
+
+Cell["\:041c\:043e\:0434\:0443\:043b\:044c \:0434\:043b\:044f \:0441\:043e\
+\:0437\:0434\:0430\:043d\:0438\:044f \:0438\:0437\:043e\:0431\:0440\:0430\
+\:0436\:0435\:043d\:0438\:044f ", "Subsection",
+ CellChangeTimes->{{3.925460643194559*^9, 3.9254606747365093`*^9}, {
+  3.9254615594871254`*^9, 
+  3.9254615738469124`*^9}},ExpressionUUID->"28c15d39-17c3-7646-959f-\
+dd94ae3b3bca"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"LTEdataPlot", "[", 
+    RowBox[{"data_", ",", " ", "time_"}], "]"}], ":=", " ", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"solplot", ",", "plotrange"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"plotrange", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"solplot", " ", "=", " ", 
+       RowBox[{"ListPlot", "[", 
+        RowBox[{
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"data", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "[", 
+              RowBox[{"[", "x", "]"}], "]"}], ",", 
+             RowBox[{
+              RowBox[{"data", "[", 
+               RowBox[{"[", "time", "]"}], "]"}], "[", 
+              RowBox[{"[", "x", "]"}], "]"}]}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", " ", "2", ",", " ", 
+             RowBox[{
+              RowBox[{"Length", "@", 
+               RowBox[{"data", "[", 
+                RowBox[{"[", "time", "]"}], "]"}]}], "-", "1"}]}], "}"}]}], 
+          "\[IndentingNewLine]", "]"}], ",", " ", 
+         RowBox[{"Joined", "->", "False"}], ",", " ", 
+         RowBox[{"PlotRange", "->", "plotrange"}], ",", "\[IndentingNewLine]",
+          " ", 
+         RowBox[{"AspectRatio", " ", "->", " ", "1"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Axes", " ", "->", " ", "True"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Frame", "->", "True"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"FrameTicks", "->", " ", "None"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"AxesOrigin", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{"PlotStyle", "->", "Black"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"PlotMarkers", "->", 
+          RowBox[{"{", 
+           RowBox[{"Automatic", ",", "0.03"}], "}"}]}]}], 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], ";", 
+      "\[IndentingNewLine]", "solplot"}]}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.925461580340372*^9, 3.925461611066723*^9}, {
+   3.925461817376606*^9, 3.925462066520378*^9}, {3.925462104605505*^9, 
+   3.925462154281128*^9}, {3.925464242788531*^9, 3.925464257182642*^9}, {
+   3.9254643250975037`*^9, 3.925464328964833*^9}, {3.926232233220466*^9, 
+   3.926232256876623*^9}, {3.926233071461403*^9, 3.926233085899805*^9}, {
+   3.926233425381317*^9, 3.926233432163809*^9}, 3.926234991218601*^9, 
+   3.926840780050628*^9, {3.926840993200369*^9, 3.926840995106743*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"c98ae8c3-26cf-9a44-b76f-269dca5a3680"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:041c\:043e\:0434\:0443\:043b\:044c \:0434\:043b\:044f \:0441\:043e\
+\:0445\:0440\:0430\:043d\:0435\:043d\:0438\:044f \:0438\:0437\:043e\:0431\
+\:0440\:0430\:0436\:0435\:043d\:0438\:044f", "Subsection",
+ CellChangeTimes->{{3.925460643194559*^9, 3.9254606747365093`*^9}, {
+  3.9254615594871254`*^9, 3.9254615738469124`*^9}, {3.925462167055546*^9, 
+  3.9254621941898823`*^9}},ExpressionUUID->"576f0b65-a709-f84b-a80c-\
+2f592394c6d2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SavePlot", "[", 
+   RowBox[{"plot_", ",", " ", "path_", ",", " ", "name_", ",", " ", 
+    RowBox[{"num_", " ", ":", " ", "0"}], ",", 
+    RowBox[{"imgsize_", " ", ":", 
+     RowBox[{"{", 
+      RowBox[{"128", ",", " ", "128"}], "}"}]}]}], "]"}], ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{
+       "path", " ", "<>", " ", "name", " ", "<>", "\"\<_\>\"", "<>", " ", 
+        RowBox[{"ToString", "[", "num", "]"}], "<>", " ", "\"\<.png\>\""}], 
+       ",", " ", "plot", ",", " ", 
+       RowBox[{"ImageSize", " ", "->", " ", "imgsize"}]}], "]"}], ";"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.925462196105795*^9, 3.925462337925249*^9}, {
+   3.9254623857555428`*^9, 3.92546245577874*^9}, {3.925462486965233*^9, 
+   3.925462496205326*^9}, {3.925462684829733*^9, 3.925462700456114*^9}, 
+   3.925463575718139*^9, {3.9254639665893326`*^9, 3.925463968840521*^9}, {
+   3.9254641877106266`*^9, 3.925464187901377*^9}, {3.925464366680052*^9, 
+   3.9254643673010826`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"a680aa0f-5b32-bc48-b6f3-c7023d700722"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:041c\:043e\:0434\:0443\:043b\:044c \:0434\:043b\:044f \:0441\:043e\
+\:0437\:0434\:0430\:043d\:0438\:044f \:0442\:0440\:0435\:043d\:0438\:0440\
+\:043e\:0432\:043e\:0447\:043d\:043e\:0433\:043e \:0434\:0430\:0442\:0430\
+\:0441\:0435\:0442\:0430", "Subsection",
+ CellChangeTimes->{{3.925460643194559*^9, 3.9254606747365093`*^9}, {
+  3.9254615594871254`*^9, 3.9254615738469124`*^9}, {3.925462167055546*^9, 
+  3.9254621941898823`*^9}, {3.92546270564406*^9, 
+  3.9254627556271954`*^9}},ExpressionUUID->"eb46b173-dd4f-0644-a2e0-\
+8198d416f7d4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MakeTrainData", "[", 
+   RowBox[{"data_", ",", " ", "path_", ",", " ", "name_", ",", " ", 
+    RowBox[{"step_", ":", "1"}]}], "]"}], ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "plots", ",", " ", "plot", ",", " ", "t0", ",", " ", "T", ",", " ", 
+      "tau", ",", " ", "n"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"t0", " ", "=", " ", "0"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"T", " ", "=", " ", "1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"tau", " ", "=", " ", "0.1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n", " ", "=", " ", "0"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"plots", " ", "=", " ", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"tau", " ", "=", " ", "0.1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"time", "=", " ", "2"}], ",", " ", 
+       RowBox[{"time", "<=", " ", 
+        RowBox[{"Length", "@", "data"}]}], ",", " ", 
+       RowBox[{"time", " ", "=", " ", 
+        RowBox[{"time", " ", "+", "step"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"Print", "[", "time", "]"}], ";"}], "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"plot", " ", "=", " ", 
+         RowBox[{"LTEdataPlot", "[", 
+          RowBox[{"data", ",", " ", "time"}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"plots", " ", "=", " ", 
+         RowBox[{"Append", "[", 
+          RowBox[{"plots", ",", " ", "plot"}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"SavePlot", "[", 
+         RowBox[{
+         "plot", ",", " ", "path", ",", " ", "name", ",", " ", "n", ",", 
+          RowBox[{"{", 
+           RowBox[{"128", ",", " ", "128"}], "}"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"n", " ", "=", " ", 
+         RowBox[{"n", "+", "1"}]}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+     ";"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", "plots", "*)"}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwdzFsog2EAxvGPdjFjShFlyoqptbIkyyG+OVyZQ6KNVg61UibHcLELNGtp
+DmvSaDdiJTlEChnZjeMmYsKGFSEsZOXU5Hvei6ffzdOfX9dUpgqmKIrPDNbo
+9j3pOT7p3UjiK9RbDdEZjHRghwdFESHJsJv7lwIlrlEJXE6dKYCsCboEal84
+FZDt7q2BSpGqHh5k2dVQw5W3wsjPuC6oCFNpoGd2Qw+fbx1Embr2EFp7BC6Y
+H1RpXaR90lOdeh56O4s2oYVXvQ2XxTFOaLMJidpx0RlUTK4RH7XiG1iaEuuF
+dMt3yBLj8CCfA9m5oeHwq/CJ2F48EAUTkqIEUF95kgrN1W6iIlOWDacXR/Ig
+63KlBJ6vrpZB2rmmhFsPHQ2wnKNrguLjzjao3aP6yY8XMEC/n2WEjqshE2ym
++qZJf3OMqO+g5qDG/ks0R1Tdk058I9GR9voOI+0LH3BXrj6/lPqkhtPmC6gR
+SH7g0XpaACa0mPrdjO1ylhFa3oRXHsapTNc1/Adw7Agv
+  "],
+ CellLabel->"In[5]:=",ExpressionUUID->"0503a171-6390-7349-91a8-8ff9701e2aca"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.926231680569071*^9, {3.9268406649062786`*^9, 3.9268406963838654`*^9}, {
+   3.926840730047434*^9, 3.9268407740442123`*^9}, 3.926841046155033*^9, {
+   3.9268421900059166`*^9, 3.9268421965693283`*^9}, 3.9268453973810997`*^9},
+ CellLabel->
+  "In[292]:=",ExpressionUUID->"d6776845-d9d7-154d-9379-91fc21208c0e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"LTEPlot", "[", 
+    RowBox[{"data_", ",", " ", 
+     RowBox[{"ifjoin_", ":", " ", "False"}]}], "]"}], ":=", " ", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "plotdata", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"plotdata", " ", "=", " ", 
+      RowBox[{"Manipulate", "[", 
+       RowBox[{
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"data", "[", 
+                RowBox[{"[", "1", "]"}], "]"}], "[", 
+               RowBox[{"[", "x", "]"}], "]"}], ",", 
+              RowBox[{
+               RowBox[{"data", "[", 
+                RowBox[{"[", "t", "]"}], "]"}], "[", 
+               RowBox[{"[", "x", "]"}], "]"}]}], "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", " ", "2", ",", " ", 
+              RowBox[{
+               RowBox[{"Length", "@", 
+                RowBox[{"data", "[", 
+                 RowBox[{"[", "t", "]"}], "]"}]}], "-", "1"}]}], "}"}]}], 
+           "\[IndentingNewLine]", "]"}], ",", " ", 
+          RowBox[{"Joined", "->", "ifjoin"}], ",", " ", 
+          RowBox[{"PlotRange", "->", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "}"}]}], ",", 
+          " ", 
+          RowBox[{"AxesLabel", "->", 
+           RowBox[{"{", 
+            RowBox[{"\"\<x\>\"", ",", " ", "\"\<u(x, t)\>\""}], "}"}]}]}], 
+         "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", " ", "2", ",", 
+          RowBox[{"Length", "@", "data"}], ",", " ", "1"}], "}"}]}], 
+       "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.926842983149564*^9, 3.926842995086427*^9}, {
+   3.9268435060624905`*^9, 3.92684350721146*^9}, {3.926843747871361*^9, 
+   3.926843752054302*^9}, {3.9268437849173393`*^9, 3.9268438083664*^9}, {
+   3.926843872513656*^9, 3.926843872702076*^9}, {3.926844988565096*^9, 
+   3.926845000859674*^9}, 3.926845154745474*^9, 3.9268454000451326`*^9},
+ CellLabel->"In[6]:=",ExpressionUUID->"301aaa10-aaaf-c644-9ecb-db9150a70342"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"(", "*"}]], " ", 
+    RowBox[{"\:0414\:0430\:0442\:0430\:0441\:0435\:0442", " ", "1"}], " ", 
+    StyleBox[
+     RowBox[{"*", ")"}]]}],
+   FontSize->9], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->9], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"data1", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test1_0.100000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data2", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test2_0.100000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data3", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test3_0.100000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data4", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test4_0.100000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data5", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test5_0.100000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    StyleBox[
+     RowBox[{
+      RowBox[{"MakeTrainData", "[", 
+       RowBox[{
+       "data1", ",", 
+        "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\
+\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\
+\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\:043e\:0437\:0434\
+\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_1\\\\test1\\\\\>\"", ",", " ", "\"\<test1\>\""}], "]"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"MakeTrainData", "[", 
+       RowBox[{
+       "data2", ",", 
+        "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\
+\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\
+\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\:043e\:0437\:0434\
+\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_1\\\\test2\\\\\>\"", ",", " ", "\"\<test2\>\""}], "]"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"MakeTrainData", "[", 
+       RowBox[{
+       "data3", ",", 
+        "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\
+\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\
+\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\:043e\:0437\:0434\
+\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_1\\\\test3\\\\\>\"", ",", " ", "\"\<test3\>\""}], "]"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"MakeTrainData", "[", 
+       RowBox[{
+       "data4", ",", 
+        "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\
+\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\
+\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\:043e\:0437\:0434\
+\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_1\\\\test4\\\\\>\"", ",", " ", "\"\<test4\>\""}], "]"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"MakeTrainData", "[", 
+       RowBox[{
+       "data5", ",", 
+        "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK DIRECTORY\\\\\:041a\
+\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\:0431\:043e\:0442\
+\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\:043e\:0437\:0434\
+\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_1\\\\test5\\\\\>\"", ",", " ", "\"\<test5\>\""}], "]"}]}],
+     FontSize->9], "*)"}], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], "\[IndentingNewLine]", 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9]}]}]], "Input",
+ CellChangeTimes->{{3.926232612502127*^9, 3.926232654059684*^9}, 
+   3.92623269484799*^9, {3.926232858150584*^9, 3.926232968229122*^9}, 
+   3.926233213323095*^9, 3.926235026673666*^9, {3.926841049299179*^9, 
+   3.9268410958113766`*^9}, {3.926841186167806*^9, 3.92684127516621*^9}, 
+   3.926842954227604*^9, {3.9268450150691023`*^9, 3.926845021727604*^9}, {
+   3.926845188253279*^9, 3.926845221232206*^9}, {3.926845260436744*^9, 
+   3.9268453019178267`*^9}, {3.92684540141106*^9, 3.926845507016033*^9}, {
+   3.9269158936736317`*^9, 3.9269159626844616`*^9}, 3.9269161317385654`*^9, 
+   3.9269162130468616`*^9},ExpressionUUID->"5f614c19-3277-2640-95dc-\
+96a1511d42ad"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  StyleBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"(", "*"}]], " ", 
+    RowBox[{"\:0414\:0430\:0442\:0430\:0441\:0435\:0442", " ", "2"}], " ", 
+    StyleBox[
+     RowBox[{"*", ")"}]]}],
+   FontSize->9], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->9], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"data1", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test1_0.050000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data2", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test2_0.050000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data3", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test3_0.050000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data4", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test4_0.050000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data5", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test5_0.050000_0.100000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data1", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_2\\\\test1\\\\\>\"", ",", " ", "\"\<test1\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data2", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_2\\\\test2\\\\\>\"", ",", " ", "\"\<test2\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data3", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_2\\\\test3\\\\\>\"", ",", " ", "\"\<test3\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data4", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_2\\\\test4\\\\\>\"", ",", " ", "\"\<test4\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data5", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_2\\\\test5\\\\\>\"", ",", " ", "\"\<test5\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], "\[IndentingNewLine]", 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9]}]}]], "Input",
+ CellChangeTimes->{
+  3.9269159343783627`*^9, {3.926915965190407*^9, 3.926915992468302*^9}, 
+   3.926916179072706*^9, {3.926916225824297*^9, 3.9269162303927784`*^9}, {
+   3.9269162780921383`*^9, 3.9269162826237392`*^9}},
+ CellLabel->"In[90]:=",ExpressionUUID->"2535dd51-1038-884d-a480-f62cdf280f91"],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"(", "*"}]], " ", 
+    RowBox[{"\:0414\:0430\:0442\:0430\:0441\:0435\:0442", " ", "3"}], " ", 
+    StyleBox[
+     RowBox[{"*", ")"}]]}],
+   FontSize->9], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->9], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"data1", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test1_0.050000_0.050000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data2", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test2_0.050000_0.050000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data3", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test3_0.050000_0.050000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data4", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test4_0.050000_0.050000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data5", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test5_0.050000_0.050000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data1", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_3\\\\test1\\\\\>\"", ",", " ", "\"\<test1\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data2", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_3\\\\test2\\\\\>\"", ",", " ", "\"\<test2\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data3", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_3\\\\test3\\\\\>\"", ",", " ", "\"\<test3\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data4", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_3\\\\test4\\\\\>\"", ",", " ", "\"\<test4\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data5", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_3\\\\test5\\\\\>\"", ",", " ", "\"\<test5\>\"", ",", " ", "2"}], "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9]}]}]], "Input",
+ CellChangeTimes->{{3.926915940051523*^9, 3.926915975686636*^9}, {
+  3.9269160838282337`*^9, 3.926916085838257*^9}, {3.9269163429145336`*^9, 
+  3.926916349976944*^9}},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"0422d190-3302-bc48-af23-40ada2525958"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  StyleBox[
+   RowBox[{
+    StyleBox[
+     RowBox[{"(", "*"}]], " ", 
+    RowBox[{"\:0414\:0430\:0442\:0430\:0441\:0435\:0442", " ", "4"}], " ", 
+    StyleBox[
+     RowBox[{"*", ")"}]]}],
+   FontSize->9], 
+  StyleBox["\[IndentingNewLine]",
+   FontSize->9], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"data1", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test1_0.010000_0.010000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data2", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test2_0.010000_0.010000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data3", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test3_0.010000_0.010000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data4", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test4_0.010000_0.010000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"data5", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<test5_0.010000_0.010000.txt\>\"", ",", " ", "\"\<Table\>\""}], 
+      "]"}]}], ";"}], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data1", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_4\\\\test1\\\\\>\"", ",", " ", "\"\<test1\>\"", ",", " ", "10"}], 
+     "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data2", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_4\\\\test2\\\\\>\"", ",", " ", "\"\<test2\>\"", ",", " ", "10"}], 
+     "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data3", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_4\\\\test3\\\\\>\"", ",", " ", "\"\<test3\>\"", ",", " ", "10"}], 
+     "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data4", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_4\\\\test4\\\\\>\"", ",", " ", "\"\<test4\>\"", ",", " ", "10"}], 
+     "]"}],
+    FontSize->9], 
+   StyleBox["\[IndentingNewLine]",
+    FontSize->9], 
+   StyleBox[
+    RowBox[{"MakeTrainData", "[", 
+     RowBox[{
+     "data5", ",", 
+      "\"\<C:\\\\Users\\\\gerce\\\\Documents\\\\WORK \
+DIRECTORY\\\\\:041a\:0443\:0440\:0441\:043e\:0432\:0430\:044f \:0440\:0430\
+\:0431\:043e\:0442\:0430 6 \:0441\:0435\:043c\\\\\:041a\:041e\:0414\\\\\:0421\
+\:043e\:0437\:0434\:0430\:043d\:0438\:0435 \:0442\:0435\:0441\:0442\:043e\
+\:0432\:044b\:0445 \
+\:0434\:0430\:0442\:0430\:0441\:0435\:0442\:043e\:0432\\\\test_datasets\\\\\
+dataset_4\\\\test5\\\\\>\"", ",", " ", "\"\<test5\>\"", ",", " ", "10"}], 
+     "]"}],
+    FontSize->9]}]}]], "Input",
+ CellChangeTimes->{{3.9269159701672764`*^9, 3.926915973438467*^9}, 
+   3.9269163570583706`*^9},
+ CellLabel->
+  "In[110]:=",ExpressionUUID->"8364a4c9-6e75-304c-98d9-925f863dcef4"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1428, 765.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"13c201e4-6f87-9146-8395-478a9096c4db"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 733, 15, 78, "Input",ExpressionUUID->"6c9b0eec-7378-1748-ad8f-b2ec7cd3566b"],
+Cell[CellGroupData[{
+Cell[1316, 39, 409, 6, 98, "Title",ExpressionUUID->"1da77f5a-6cea-184e-a461-6da34bcd4800"],
+Cell[CellGroupData[{
+Cell[1750, 49, 614, 11, 105, "Section",ExpressionUUID->"c90e18fb-27fc-af43-bfa3-ad75534f0433"],
+Cell[CellGroupData[{
+Cell[2389, 64, 379, 6, 54, "Subsection",ExpressionUUID->"28c15d39-17c3-7646-959f-dd94ae3b3bca"],
+Cell[2771, 72, 3070, 69, 496, "Input",ExpressionUUID->"c98ae8c3-26cf-9a44-b76f-269dca5a3680"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5878, 146, 438, 6, 54, "Subsection",ExpressionUUID->"576f0b65-a709-f84b-a80c-2f592394c6d2"],
+Cell[6319, 154, 1234, 26, 99, "Input",ExpressionUUID->"a680aa0f-5b32-bc48-b6f3-c7023d700722"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7590, 185, 545, 8, 54, "Subsection",ExpressionUUID->"eb46b173-dd4f-0644-a2e0-8198d416f7d4"],
+Cell[8138, 195, 2809, 60, 401, "Input",ExpressionUUID->"0503a171-6390-7349-91a8-8ff9701e2aca"],
+Cell[10950, 257, 356, 6, 28, "Input",ExpressionUUID->"d6776845-d9d7-154d-9379-91fc21208c0e"],
+Cell[11309, 265, 2382, 58, 154, "Input",ExpressionUUID->"301aaa10-aaaf-c644-9ecb-db9150a70342"],
+Cell[13694, 325, 4982, 109, 358, "Input",ExpressionUUID->"5f614c19-3277-2640-95dc-96a1511d42ad"],
+Cell[18679, 436, 4837, 119, 358, "Input",ExpressionUUID->"2535dd51-1038-884d-a480-f62cdf280f91"],
+Cell[23519, 557, 4796, 121, 338, "Input",ExpressionUUID->"0422d190-3302-bc48-af23-40ada2525958"],
+Cell[28318, 680, 4674, 121, 375, "Input",ExpressionUUID->"8364a4c9-6e75-304c-98d9-925f863dcef4"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
