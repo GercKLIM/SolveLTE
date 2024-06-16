@@ -237,7 +237,7 @@ bool LTE::SolveLD2i(std::string filename) {
         std::vector<std::vector<double>> A(Nx + 1, std::vector<double>(Nx + 1, 0.0));
         std::vector<double> B(Nx + 1);
 
-        double a = -gamma / h;
+        double aa = -gamma / h;
         double b = 1.0 + gamma / h;
 
         for (int x = 0; x <= Nx; x++) {
@@ -248,7 +248,7 @@ bool LTE::SolveLD2i(std::string filename) {
                 A[x][x] = 1.0; // Граничное условие
                 B[x] = U_prev[x]; // Задаем граничное условие
             } else {
-                A[x][x - 1] = a;
+                A[x][x - 1] = aa;
                 A[x][x] = b;
                 A[x][x + 1] = 0.0; // Не учитываем правую часть
                 B[x] = U_prev[x];
@@ -555,16 +555,11 @@ bool LTE::SolveLD3i(std::string filename) {
             c[0] = 0.0;
             d[0] = 0.0;
 
-            b[1] = 3.0;
-            a[1] = 0.0;
-            c[1] = -4.0;
-            d[1] = d[1];
-
-            for (int x = 2; x < Nx; x++) {
-                a[x] = gamma * 0.5;
-                b[x] = 3.0;
-                c[x] = -4.0;
-                d[x] = d[x];
+            for (int x = 1; x < Nx; x++) {
+                a[x] = -1.0 / h;
+                b[x] = 1.0 / h + 1.0 / tau;
+                c[x] = -1.0 / tau;
+                d[x] = U_prev[x + 1] / tau;
             }
 
             b[Nx] = 1.0;
@@ -583,7 +578,7 @@ bool LTE::SolveLD3i(std::string filename) {
         }
 
         file.close();
-        std::cout << "LOG: Method LD3i complete! Gamma = " << gamma << " Result saved on: " << filename << std::endl;
+        std::cout << "LOG: Method LD3i complete! Result saved on: " << filename << std::endl;
         return true;
     } else {
         std::cout << "LOG: Couldn't open file: " << filename << std::endl;

@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 
 model = Sequential()
 
-model.add(Conv2D(32, (4, 4), activation='relu', input_shape=(512, 512, 1)))
+model.add(Conv2D(32, (4, 4), activation='relu', input_shape=(128, 128, 1)))
 model.add(MaxPooling2D(pool_size=(4, 4)))
 
 model.add(Conv2D(64, (2, 2), activation='relu'))
