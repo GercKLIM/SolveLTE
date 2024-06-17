@@ -30,6 +30,12 @@ public:
         U0_is_set = true;
     }
 
+    // Функция задания U0
+    void set_GU_left(std::function<double(double)> func) {
+        GU_left = func;
+        GU_left_is_set = true;
+    }
+
     double u0(double x){
         return U0(x);
     }
@@ -43,6 +49,7 @@ public:
         std::cout << "tau = " << tau << std::endl;
         std::cout << "gamma = " << /*a * tau / h*/ gamma << std::endl;
         std::cout << "U0 is " << ((U0_is_set) ? "set" : "NOT set") << std::endl;
+        std::cout << "GU_left is " << ((GU_left_is_set) ? "set" : "NOT set") << std::endl;
     }
 
     /* Заголовки методов численного решения */
@@ -58,6 +65,7 @@ public:
     bool SolveLD3e(std::string filename);
 
     std::vector<double> TridiagonalSolver(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c, const std::vector<double>& d);
+
     // Неявная схема с левой разностью на 3 точках
     bool SolveLD3i(std::string filename);
 
@@ -71,6 +79,7 @@ public:
 private:
 
     std::function<double(double)> U0;
+    std::function<double(double)> GU_left;
 
     /* СОстояние заданности параметров */
 //    bool a_is_set = false;
@@ -78,4 +87,5 @@ private:
 //    bool h_is_set = false;
 //    bool tau_is_set = false;
     bool U0_is_set = false;
+    bool GU_left_is_set = false;
 };

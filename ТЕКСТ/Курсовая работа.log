@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  16 JUN 2024 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  16 JUN 2024 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,25 +714,83 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \colbreak@box=\box99
 \mc@col@check@num=\count306
 )
+(c:/texlive/2023/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(c:/texlive/2023/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(c:/texlive/2023/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(c:/texlive/2023/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks32
+\@arclen=\dimen194
+\@arcrad=\dimen195
+\pIIe@tempdima=\dimen196
+\pIIe@tempdimb=\dimen197
+\pIIe@tempdimc=\dimen198
+\pIIe@tempdimd=\dimen199
+\pIIe@tempdime=\dimen256
+\pIIe@tempdimf=\dimen257
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count307
+\calc@Bcount=\count308
+\calc@Adimen=\dimen258
+\calc@Bdimen=\dimen259
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count309
+\calc@Cskip=\skip64
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen260
+\ar@mcellbox=\box100
+\extrarowheight=\dimen261
+\NC@list=\toks33
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box101
+)
+\diagbox@boxa=\box102
+\diagbox@boxb=\box103
+\diagbox@boxm=\box104
+\diagbox@wd=\dimen262
+\diagbox@ht=\dimen263
+\diagbox@insepl=\dimen264
+\diagbox@insepr=\dimen265
+\diagbox@outsepl=\dimen266
+\diagbox@outsepr=\dimen267
+)
 (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count307
-\lst@gtempboxa=\box100
-\lst@token=\toks32
-\lst@length=\count308
-\lst@currlwidth=\dimen194
-\lst@column=\count309
-\lst@pos=\count310
-\lst@lostspace=\dimen195
-\lst@width=\dimen196
-\lst@newlines=\count311
-\lst@lineno=\count312
-\lst@maxwidth=\dimen197
+\lst@mode=\count310
+\lst@gtempboxa=\box105
+\lst@token=\toks34
+\lst@length=\count311
+\lst@currlwidth=\dimen268
+\lst@column=\count312
+\lst@pos=\count313
+\lst@lostspace=\dimen269
+\lst@width=\dimen270
+\lst@newlines=\count314
+\lst@lineno=\count315
+\lst@maxwidth=\dimen271
 
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count313
-\lst@skipnumbers=\count314
-\lst@framebox=\box101
+\c@lstnumber=\count316
+\lst@skipnumbers=\count317
+\lst@framebox=\box106
 )
 (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -753,8 +811,8 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count315
-\l__pdf_internal_box=\box102
+\l__color_backend_stack_int=\count318
+\l__pdf_internal_box=\box107
 )
 (./РљСѓСЂСЃРѕРІР°СЏ СЂР°Р±РѕС‚Р°.aux
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 9
@@ -794,17 +852,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen198
-\scratchbox=\box103
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen199
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count319
+\scratchdimen=\dimen272
+\scratchbox=\box108
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen273
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks36
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -815,7 +873,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring ON on input line 63.
-\c@lstlisting=\count322
+\c@lstlisting=\count325
 
 
 pdfTeX warning: pdflatex.exe (file ./style/emblema.pdf): PDF inclusion: found P
@@ -893,7 +951,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [4
 
  <./figures/primer1_1.png (PNG copy)> <./figures/test4.png (PNG copy)>]
-Overfull \hbox (25.24158pt too wide) detected at line 147
+Overfull \hbox (25.24161pt too wide) detected at line 147
 [] \OT1/cmr/m/n/12 = [] = []   =[]\OMS/cmsy/m/n/12 )   []   \OT1/cmr/m/n/12 =[]
 \OMS/cmsy/m/n/12 )   []   \OT1/cmr/m/n/12 =[]\OMS/cmsy/m/n/12 )   \OML/cmm/m/it
 /12 u \OT1/cmr/m/n/12 = \OML/cmm/m/it/12  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \
@@ -909,73 +967,82 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hss' on input line 162.
 
 
-LaTeX Warning: Command \cyrya invalid in math mode on input line 172.
+LaTeX Warning: Command \cyrya invalid in math mode on input line 173.
 
 Missing character: There is no я in font cmr12!
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 253.
+(hyperref)                removing `\hss' on input line 237.
 
 <./figures/test1.png, id=99, 1129.21875pt x 1129.21875pt>
 File: ./figures/test1.png Graphic file (type png)
 <use ./figures/test1.png>
-Package pdftex.def Info: ./figures/test1.png  used on input line 263.
+Package pdftex.def Info: ./figures/test1.png  used on input line 247.
 (pdftex.def)             Requested size: 145.68143pt x 145.66638pt.
 <./figures/test2.png, id=100, 1129.21875pt x 1129.21875pt>
 File: ./figures/test2.png Graphic file (type png)
 <use ./figures/test2.png>
-Package pdftex.def Info: ./figures/test2.png  used on input line 270.
+Package pdftex.def Info: ./figures/test2.png  used on input line 254.
 (pdftex.def)             Requested size: 145.68143pt x 145.66638pt.
 <./figures/test3.png, id=101, 1129.21875pt x 1129.21875pt>
 File: ./figures/test3.png Graphic file (type png)
 <use ./figures/test3.png>
-Package pdftex.def Info: ./figures/test3.png  used on input line 277.
+Package pdftex.def Info: ./figures/test3.png  used on input line 261.
 (pdftex.def)             Requested size: 145.68143pt x 145.66638pt.
 File: ./figures/test4.png Graphic file (type png)
 <use ./figures/test4.png>
-Package pdftex.def Info: ./figures/test4.png  used on input line 286.
+Package pdftex.def Info: ./figures/test4.png  used on input line 270.
 (pdftex.def)             Requested size: 216.24371pt x 216.24237pt.
 <./figures/test5.png, id=102, 1129.21875pt x 1129.21875pt>
 File: ./figures/test5.png Graphic file (type png)
 <use ./figures/test5.png>
-Package pdftex.def Info: ./figures/test5.png  used on input line 293.
+Package pdftex.def Info: ./figures/test5.png  used on input line 277.
 (pdftex.def)             Requested size: 216.24371pt x 216.24237pt.
 [6] [7 <./figures/test1.png (PNG copy)> <./figures/test2.png (PNG copy)> <./fig
 ures/test3.png (PNG copy)> <./figures/test5.png (PNG copy)>]
-Overfull \hbox (30.78513pt too wide) in paragraph at lines 333--334
+Overfull \hbox (48.4463pt too wide) in paragraph at lines 300--311
+ [][] 
+ []
+
+
+Overfull \hbox (30.78513pt too wide) in paragraph at lines 316--317
 []\T2A/cmr/m/n/12 Для ви-зу-а-ли-за-ции ре-ше-ния ис-поль-зо-вал-ся ма-те-ма-ти
 -че-ский па-кет Wolfram Mathematica,
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 335.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 339.
-
 [8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 319.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 323.
+
+[9
+
+]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 353.
- [9] (./code/Model.py)
+nput line 337.
+ (./code/Model.py)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 356.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 362.
+(hyperref)                removing `\hss' on input line 340.
 
 [10]
-Overfull \hbox (12.53152pt too wide) in paragraph at lines 370--378
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hss' on input line 346.
+
+
+Overfull \hbox (14.5315pt too wide) in paragraph at lines 354--362
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 382.
+(hyperref)                removing `\hss' on input line 366.
 
 [11] [12] [13
 
@@ -991,13 +1058,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16238 strings out of 474267
- 249867 string characters out of 5751465
+ 16678 strings out of 474267
+ 256707 string characters out of 5751465
  1959558 words of memory out of 5000000
- 38083 multiletter control sequences out of 15000+600000
+ 38506 multiletter control sequences out of 15000+600000
  580442 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,14n,93p,1468b,795s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,93p,1468b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-di
@@ -1015,11 +1082,11 @@ frm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
 b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texl
 ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on "РљСѓСЂСЃРѕРІР°СЏ СЂР°Р±РѕС‚Р°.pdf" (13 pages, 617467 bytes).
+Output written on "РљСѓСЂСЃРѕРІР°СЏ СЂР°Р±РѕС‚Р°.pdf" (13 pages, 619333 bytes).
 
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
+ 312 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
  76 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
