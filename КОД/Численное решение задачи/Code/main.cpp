@@ -22,7 +22,7 @@ void test1(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
 
     test1.set_U0([&](double x) { return (x - l1) / (l2 - l1);});
 
-    test1.set_GU_left([&](double t) { return 1./2. * (1. - t + L1);});
+    test1.set_GU([&](double x, double t) { return 1./2. * (1. - t + x);});
 
     test1.gamma = test1.a * test1.tau / test1.h;
     //test1.info();
@@ -59,7 +59,7 @@ void test2(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
     test2.h = h;
     test2.tau = tau;
     test2.set_U0([&](double x) { return ((l2 - x) / (l2 - l1)) ;});
-    test2.set_GU_left([&](double t) { return 1./2. * (1. + t - L1);});
+    test2.set_GU([&](double x, double t) { return 1./2. * (1. + t - x);});
     test2.gamma = test2.a * test2.tau / test2.h;
     //test6.info();
 
@@ -90,7 +90,7 @@ void test3(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
     test3.h = h;
     test3.tau = tau;
     test3.set_U0([&](double x) { return l ;});
-    test3.set_GU_left([&](double t) { return l;});
+    test3.set_GU([&](double x, double t) { return 2./3.;});
     test3.gamma = test3.a * test3.tau / test3.h;
     //test3.info();
 
@@ -121,7 +121,7 @@ void test4(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
     test4.h = h;
     test4.tau = tau;
     test4.set_U0([&](double x) { return (1./3. * (1 - cos( ((2 * M_PI * ( x - l11)) / (l22 - l11)))));});
-    test4.set_GU_left([&](double t) { return 1./3. * (1 - cos(M_PI * (1 - t + L1)));});
+    test4.set_GU([&](double x, double t)  { return 1./3. * (1 - cos(M_PI * (1 - t + x)));});
     test4.gamma = test4.a * test4.tau / test4.h;
     //test3.info();
 
@@ -162,13 +162,13 @@ void test5(double h = 0.1, double tau = 0.1, double L1 = -10., double L2 = 10., 
         }
     });
 
-    test5.set_GU_left([&](double x) {
+    test5.set_GU([&](double x, double t) {
         if ((x >= l1) and (x < l11)) {
-            return (-2./ 3. * (l11 - l1) * (x - l1) + 1.);
+            return 0.986667 + 0.0666667 *t - 0.0666667 * x;
         } else if ((x >= l11) and (x <= l22)) {
             return 1./3.;
         } else if ((x > l22) and (x <= l2)) {
-            return (2./3. * (l2 - l22) * (x - l2) + 1.);
+            return 0.986667 - 0.0666667 * t + 0.0666667 * x;
         } else {
             return 0.;
         }
@@ -333,19 +333,20 @@ void make_test_dataset(double h, double tau){
 int main() {
 
     /* Тест 1. Левый треугольник */
-    test1(0.1, 0.01, -100., 100., 10, -1., 1.);
+    //test1(0.1, 0.01, -1., 1., 10, -1., 1.);
+
 
     /* Тест 2. Правый треугольник */
-    //test2(0.1, 0.1, -10., 10., 10., -1., 1.);
+    //test2(0.1, 0.05, -1., 1., 10., -1., 1.);
 
     /* Тест 3. Прямоугольник */
     //test3(0.1, 0.1, -10., 10., 10., 1.);
 
     /* Тест 4. Косинус */
-    //test4(0.1, 0.1, -10., 10., 10., -1., 1.);
+    test4(0.1, 0.01, -1., 1., 10., -1., 1.);
 
     /* Тест 5. Зуб */
-    //test5(0.1, 0.1, -10., 10., 10., -3., 3., -1., 1.);
+    //test5(0.1, 0.01, -10., 10., 10., -3., 3., -1., 1.);
 
     //make_test_dataset(0.1, 0.1);
     //make_test_dataset(0.1, 0.05);

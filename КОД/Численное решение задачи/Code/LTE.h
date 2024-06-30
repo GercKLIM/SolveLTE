@@ -31,9 +31,9 @@ public:
     }
 
     // Функция задания U0
-    void set_GU_left(std::function<double(double)> func) {
-        GU_left = func;
-        GU_left_is_set = true;
+    void set_GU(std::function<double(double, double)> func) {
+        GU = func;
+        GU_is_set = true;
     }
 
     double u0(double x){
@@ -49,7 +49,7 @@ public:
         std::cout << "tau = " << tau << std::endl;
         std::cout << "gamma = " << /*a * tau / h*/ gamma << std::endl;
         std::cout << "U0 is " << ((U0_is_set) ? "set" : "NOT set") << std::endl;
-        std::cout << "GU_left is " << ((GU_left_is_set) ? "set" : "NOT set") << std::endl;
+        std::cout << "GU is " << ((GU_is_set) ? "set" : "NOT set") << std::endl;
     }
 
     /* Заголовки методов численного решения */
@@ -57,13 +57,16 @@ public:
     // Явная схема с левой разностью на 2 точках
     bool SolveLD2e(std::string filename);
 
+    // Решение СЛАУ прогонкой для LD2i
     std::vector<double> SolveTriDiagonal(const std::vector<std::vector<double>>& A, const std::vector<double>& B);
+
     // Невная схема с левой разностью на 2 точках
     bool SolveLD2i(std::string filename);
 
     // Явная схема с левой разностью на 3 точках
     bool SolveLD3e(std::string filename);
 
+    // Решение СЛАУ прогонкой для LD3i
     std::vector<double> TridiagonalSolver(const std::vector<double>& a, const std::vector<double>& b, const std::vector<double>& c, const std::vector<double>& d);
 
     // Неявная схема с левой разностью на 3 точках
@@ -79,7 +82,7 @@ public:
 private:
 
     std::function<double(double)> U0;
-    std::function<double(double)> GU_left;
+    std::function<double(double, double)> GU;
 
     /* СОстояние заданности параметров */
 //    bool a_is_set = false;
@@ -87,5 +90,5 @@ private:
 //    bool h_is_set = false;
 //    bool tau_is_set = false;
     bool U0_is_set = false;
-    bool GU_left_is_set = false;
+    bool GU_is_set = false;
 };
