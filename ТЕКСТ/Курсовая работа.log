@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  16 JUN 2024 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.1)  27 JUN 2024 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,57 +619,109 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count294
 )
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+
+(c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
+)
+\XKV@depth=\count295
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(c:/texlive/2023/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box53
+)
+\tc@llx=\dimen174
+\tc@lly=\dimen175
+\tc@urx=\dimen176
+\tc@ury=\dimen177
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen178
+\adjbox@Height=\dimen179
+\adjbox@Depth=\dimen180
+\adjbox@Totalheight=\dimen181
+\adjbox@pwidth=\dimen182
+\adjbox@pheight=\dimen183
+\adjbox@pdepth=\dimen184
+\adjbox@ptotalheight=\dimen185
+
+(c:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count296
+)
+(c:/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box54
+\sift@deathcycles=\count297
+\@vwid@loff=\dimen186
+\@vwid@roff=\dimen187
+))
 (c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip55
-\multirow@cntb=\count295
+\multirow@cntb=\count298
 \multirow@dima=\skip56
-\bigstrutjot=\dimen174
+\bigstrutjot=\dimen188
 )
 (c:/texlive/2023/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count296
-\ST@wd=\dimen175
+\c@tracingst=\count299
+\ST@wd=\dimen189
 \ST@rightskip=\skip57
 \ST@leftskip=\skip58
 \ST@parfillskip=\skip59
-\ST@pageleft=\dimen176
-\ST@headht=\dimen177
-\ST@tailht=\dimen178
-\ST@pagesofar=\dimen179
-\ST@pboxht=\dimen180
-\ST@lineht=\dimen181
-\ST@prevht=\dimen182
-\ST@toadd=\dimen183
-\ST@dimen=\dimen184
-\ST@pbox=\box53
+\ST@pageleft=\dimen190
+\ST@headht=\dimen191
+\ST@tailht=\dimen192
+\ST@pagesofar=\dimen193
+\ST@pboxht=\dimen194
+\ST@lineht=\dimen195
+\ST@prevht=\dimen196
+\ST@toadd=\dimen197
+\ST@dimen=\dimen198
+\ST@pbox=\box55
 )
 (c:/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count297
-\mult@box=\box54
-\multicol@leftmargin=\dimen185
-\c@unbalance=\count298
-\c@collectmore=\count299
-\doublecol@number=\count300
-\multicoltolerance=\count301
-\multicolpretolerance=\count302
-\full@width=\dimen186
-\page@free=\dimen187
-\premulticols=\dimen188
-\postmulticols=\dimen189
+\c@tracingmulticols=\count300
+\mult@box=\box56
+\multicol@leftmargin=\dimen199
+\c@unbalance=\count301
+\c@collectmore=\count302
+\doublecol@number=\count303
+\multicoltolerance=\count304
+\multicolpretolerance=\count305
+\full@width=\dimen256
+\page@free=\dimen257
+\premulticols=\dimen258
+\postmulticols=\dimen259
 \multicolsep=\skip60
 \multicolbaselineskip=\skip61
-\partial@page=\box55
-\last@line=\box56
-\mc@boxedresult=\box57
-\maxbalancingoverflow=\dimen190
-\mult@rightbox=\box58
-\mult@grightbox=\box59
-\mult@firstbox=\box60
-\mult@gfirstbox=\box61
-\@tempa=\box62
-\@tempa=\box63
+\partial@page=\box57
+\last@line=\box58
+\mc@boxedresult=\box59
+\maxbalancingoverflow=\dimen260
+\mult@rightbox=\box60
+\mult@grightbox=\box61
+\mult@firstbox=\box62
+\mult@gfirstbox=\box63
 \@tempa=\box64
 \@tempa=\box65
 \@tempa=\box66
@@ -704,15 +756,17 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box95
 \@tempa=\box96
 \@tempa=\box97
-\c@minrows=\count303
-\c@columnbadness=\count304
-\c@finalcolumnbadness=\count305
-\last@try=\dimen191
-\multicolovershoot=\dimen192
-\multicolundershoot=\dimen193
-\mult@nat@firstbox=\box98
-\colbreak@box=\box99
-\mc@col@check@num=\count306
+\@tempa=\box98
+\@tempa=\box99
+\c@minrows=\count306
+\c@columnbadness=\count307
+\c@finalcolumnbadness=\count308
+\last@try=\dimen261
+\multicolovershoot=\dimen262
+\multicolundershoot=\dimen263
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count309
 )
 (c:/texlive/2023/texmf-dist/tex/latex/diagbox/diagbox.sty
 Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
@@ -729,68 +783,68 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
 (c:/texlive/2023/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-\pIIe@GRAPH=\toks32
-\@arclen=\dimen194
-\@arcrad=\dimen195
-\pIIe@tempdima=\dimen196
-\pIIe@tempdimb=\dimen197
-\pIIe@tempdimc=\dimen198
-\pIIe@tempdimd=\dimen199
-\pIIe@tempdime=\dimen256
-\pIIe@tempdimf=\dimen257
+\pIIe@GRAPH=\toks34
+\@arclen=\dimen264
+\@arcrad=\dimen265
+\pIIe@tempdima=\dimen266
+\pIIe@tempdimb=\dimen267
+\pIIe@tempdimc=\dimen268
+\pIIe@tempdimd=\dimen269
+\pIIe@tempdime=\dimen270
+\pIIe@tempdimf=\dimen271
 )
 (c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count307
-\calc@Bcount=\count308
-\calc@Adimen=\dimen258
-\calc@Bdimen=\dimen259
+\calc@Acount=\count310
+\calc@Bcount=\count311
+\calc@Adimen=\dimen272
+\calc@Bdimen=\dimen273
 \calc@Askip=\skip62
 \calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count309
+\calc@Ccount=\count312
 \calc@Cskip=\skip64
 )
 (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen260
-\ar@mcellbox=\box100
-\extrarowheight=\dimen261
-\NC@list=\toks33
+\col@sep=\dimen274
+\ar@mcellbox=\box102
+\extrarowheight=\dimen275
+\NC@list=\toks35
 \extratabsurround=\skip65
 \backup@length=\skip66
-\ar@cellbox=\box101
+\ar@cellbox=\box103
 )
-\diagbox@boxa=\box102
-\diagbox@boxb=\box103
-\diagbox@boxm=\box104
-\diagbox@wd=\dimen262
-\diagbox@ht=\dimen263
-\diagbox@insepl=\dimen264
-\diagbox@insepr=\dimen265
-\diagbox@outsepl=\dimen266
-\diagbox@outsepr=\dimen267
+\diagbox@boxa=\box104
+\diagbox@boxb=\box105
+\diagbox@boxm=\box106
+\diagbox@wd=\dimen276
+\diagbox@ht=\dimen277
+\diagbox@insepl=\dimen278
+\diagbox@insepr=\dimen279
+\diagbox@outsepl=\dimen280
+\diagbox@outsepr=\dimen281
 )
 (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count310
-\lst@gtempboxa=\box105
-\lst@token=\toks34
-\lst@length=\count311
-\lst@currlwidth=\dimen268
-\lst@column=\count312
-\lst@pos=\count313
-\lst@lostspace=\dimen269
-\lst@width=\dimen270
-\lst@newlines=\count314
-\lst@lineno=\count315
-\lst@maxwidth=\dimen271
+\lst@mode=\count313
+\lst@gtempboxa=\box107
+\lst@token=\toks36
+\lst@length=\count314
+\lst@currlwidth=\dimen282
+\lst@column=\count315
+\lst@pos=\count316
+\lst@lostspace=\dimen283
+\lst@width=\dimen284
+\lst@newlines=\count317
+\lst@lineno=\count318
+\lst@maxwidth=\dimen285
 
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count316
-\lst@skipnumbers=\count317
-\lst@framebox=\box106
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
+\lst@framebox=\box108
 )
 (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -811,16 +865,89 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count318
-\l__pdf_internal_box=\box107
+\l__color_backend_stack_int=\count321
+\l__pdf_internal_box=\box109
 )
 (./–ö—É—Ä—Å–æ–≤–∞—è —Ä–∞–±–æ—Ç–∞.aux
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 9
-.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+0.
 
 (c:/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)<<t2a.cmap>>)
+)<<t2a.cmap>>
+
+LaTeX Warning: Label `test1' multiply defined.
+
+
+LaTeX Warning: Label `sub@test1' multiply defined.
+
+
+LaTeX Warning: Label `test2' multiply defined.
+
+
+LaTeX Warning: Label `sub@test2' multiply defined.
+
+
+LaTeX Warning: Label `test3' multiply defined.
+
+
+LaTeX Warning: Label `sub@test3' multiply defined.
+
+
+LaTeX Warning: Label `test1' multiply defined.
+
+
+LaTeX Warning: Label `sub@test1' multiply defined.
+
+
+LaTeX Warning: Label `test2' multiply defined.
+
+
+LaTeX Warning: Label `sub@test2' multiply defined.
+
+
+LaTeX Warning: Label `test3' multiply defined.
+
+
+LaTeX Warning: Label `sub@test3' multiply defined.
+
+
+LaTeX Warning: Label `test1' multiply defined.
+
+
+LaTeX Warning: Label `sub@test1' multiply defined.
+
+
+LaTeX Warning: Label `test2' multiply defined.
+
+
+LaTeX Warning: Label `sub@test2' multiply defined.
+
+
+LaTeX Warning: Label `test3' multiply defined.
+
+
+LaTeX Warning: Label `sub@test3' multiply defined.
+
+
+LaTeX Warning: Label `test1' multiply defined.
+
+
+LaTeX Warning: Label `sub@test1' multiply defined.
+
+
+LaTeX Warning: Label `test2' multiply defined.
+
+
+LaTeX Warning: Label `sub@test2' multiply defined.
+
+
+LaTeX Warning: Label `test3' multiply defined.
+
+
+LaTeX Warning: Label `sub@test3' multiply defined.
+
+)
 \openout1 = `"–ö—É—Ä—Å–æ–≤–∞—è —Ä–∞–±–æ—Ç–∞.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -849,20 +976,19 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen272
-\scratchbox=\box108
-\nofMPsegments=\count320
-\nofMParguments=\count321
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen273
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count322
+\scratchdimen=\dimen286
+\scratchbox=\box110
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen287
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks38
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -873,7 +999,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring ON on input line 63.
-\c@lstlisting=\count325
+\c@lstlisting=\count328
 
 
 pdfTeX warning: pdflatex.exe (file ./style/emblema.pdf): PDF inclusion: found P
@@ -1001,50 +1127,156 @@ Package pdftex.def Info: ./figures/test5.png  used on input line 277.
 (pdftex.def)             Requested size: 216.24371pt x 216.24237pt.
 [6] [7 <./figures/test1.png (PNG copy)> <./figures/test2.png (PNG copy)> <./fig
 ures/test3.png (PNG copy)> <./figures/test5.png (PNG copy)>]
-Overfull \hbox (48.4463pt too wide) in paragraph at lines 300--311
+Overfull \hbox (12.17311pt too wide) in paragraph at lines 331--333
  [][] 
  []
 
+[8
 
-Overfull \hbox (30.78513pt too wide) in paragraph at lines 316--317
+]
+<./figures/res1_2.pdf, id=138, 321.2pt x 321.2pt>
+File: ./figures/res1_2.pdf Graphic file (type pdf)
+<use ./figures/res1_2.pdf>
+Package pdftex.def Info: ./figures/res1_2.pdf  used on input line 368.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res1_1.pdf, id=139, 321.2pt x 321.2pt>
+File: ./figures/res1_1.pdf Graphic file (type pdf)
+<use ./figures/res1_1.pdf>
+Package pdftex.def Info: ./figures/res1_1.pdf  used on input line 375.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res1_3.pdf, id=140, 321.2pt x 321.2pt>
+File: ./figures/res1_3.pdf Graphic file (type pdf)
+<use ./figures/res1_3.pdf>
+Package pdftex.def Info: ./figures/res1_3.pdf  used on input line 382.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res2_2.pdf, id=141, 321.2pt x 321.2pt>
+File: ./figures/res2_2.pdf Graphic file (type pdf)
+<use ./figures/res2_2.pdf>
+Package pdftex.def Info: ./figures/res2_2.pdf  used on input line 393.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res2_1.pdf, id=142, 321.2pt x 321.2pt>
+File: ./figures/res2_1.pdf Graphic file (type pdf)
+<use ./figures/res2_1.pdf>
+Package pdftex.def Info: ./figures/res2_1.pdf  used on input line 400.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res2_3.pdf, id=143, 321.2pt x 321.2pt>
+File: ./figures/res2_3.pdf Graphic file (type pdf)
+<use ./figures/res2_3.pdf>
+Package pdftex.def Info: ./figures/res2_3.pdf  used on input line 407.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+ [9
+
+ <./figures/res1_2.pdf> <./figures/res1_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res1_1.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res1_3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res1_3.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res2_2.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res2_2.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res2_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res2_1.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res2_3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res2_3.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
+<./figures/res3_2.pdf, id=232, 321.2pt x 321.2pt>
+File: ./figures/res3_2.pdf Graphic file (type pdf)
+<use ./figures/res3_2.pdf>
+Package pdftex.def Info: ./figures/res3_2.pdf  used on input line 419.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res3_1.pdf, id=233, 321.2pt x 321.2pt>
+File: ./figures/res3_1.pdf Graphic file (type pdf)
+<use ./figures/res3_1.pdf>
+Package pdftex.def Info: ./figures/res3_1.pdf  used on input line 426.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res3_3.pdf, id=234, 321.2pt x 321.2pt>
+File: ./figures/res3_3.pdf Graphic file (type pdf)
+<use ./figures/res3_3.pdf>
+Package pdftex.def Info: ./figures/res3_3.pdf  used on input line 433.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res5_2.pdf, id=235, 321.2pt x 321.2pt>
+File: ./figures/res5_2.pdf Graphic file (type pdf)
+<use ./figures/res5_2.pdf>
+Package pdftex.def Info: ./figures/res5_2.pdf  used on input line 444.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res5_1.pdf, id=236, 321.2pt x 321.2pt>
+File: ./figures/res5_1.pdf Graphic file (type pdf)
+<use ./figures/res5_1.pdf>
+Package pdftex.def Info: ./figures/res5_1.pdf  used on input line 451.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+<./figures/res5_3.pdf, id=237, 321.2pt x 321.2pt>
+File: ./figures/res5_3.pdf Graphic file (type pdf)
+<use ./figures/res5_3.pdf>
+Package pdftex.def Info: ./figures/res5_3.pdf  used on input line 458.
+(pdftex.def)             Requested size: 145.68143pt x 145.68552pt.
+
+Overfull \hbox (30.78513pt too wide) in paragraph at lines 465--466
 []\T2A/cmr/m/n/12 ƒÎˇ ‚Ë-ÁÛ-‡-ÎË-Á‡-ˆËË Â-¯Â-ÌËˇ ËÒ-ÔÓÎ¸-ÁÓ-‚‡Î-Òˇ Ï‡-ÚÂ-Ï‡-ÚË
 -˜Â-ÒÍËÈ Ô‡-ÍÂÚ Wolfram Mathematica,
  []
 
-[8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 319.
+(hyperref)                removing `\hss' on input line 468.
 
+[10
+
+ <./figures/res3_2.pdf> <./figures/res3_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res3_1.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res3_3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res3_3.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res5_2.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res5_2.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res5_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res5_1.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./figures/res5_3.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/res5_3.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 323.
+(hyperref)                removing `\hss' on input line 472.
 
-[9
-
-]
+[11]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 337.
+nput line 486.
  (./code/Model.py)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 340.
+(hyperref)                removing `\hss' on input line 489.
 
-[10]
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 346.
+(hyperref)                removing `\hss' on input line 495.
 
 
-Overfull \hbox (14.5315pt too wide) in paragraph at lines 354--362
+Overfull \hbox (14.5315pt too wide) in paragraph at lines 503--511
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hss' on input line 366.
+(hyperref)                removing `\hss' on input line 515.
 
-[11] [12] [13
+[13] [14] [15
 
 ] (./–ö—É—Ä—Å–æ–≤–∞—è —Ä–∞–±–æ—Ç–∞.aux)
  ***********
@@ -1056,37 +1288,41 @@ L3 programming layer <2023-11-09>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.72pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 16678 strings out of 474267
- 256707 string characters out of 5751465
+ 17911 strings out of 474267
+ 279472 string characters out of 5751465
  1959558 words of memory out of 5000000
- 38506 multiletter control sequences out of 15000+600000
+ 39698 multiletter control sequences out of 15000+600000
  580442 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,16n,93p,1468b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,93p,1468b,872s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/
-texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb><c:/texlive/2023/texmf-dist
-/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2023/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
-frm0600.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
-b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texl
-ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on "–ö—É—Ä—Å–æ–≤–∞—è —Ä–∞–±–æ—Ç–∞.pdf" (13 pages, 619333 bytes).
-
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/cm-super/sfbi1728.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/s
+fbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pf
+b><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on "–ö—É—Ä—Å–æ–≤–∞—è —Ä–∞–±–æ—Ç–∞.pdf" (15 pages, 1026114 bytes)
+.
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 510 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
